@@ -9,12 +9,22 @@ Basic setup - MERN STACK!
                 "NEVER  PUT ";" IN .ENV FILE"
 
 8. creating route folder - user_route.js
-9. api testing through postman   
+9. api testing through postman -> http://localhost:5000/api/user_details  
+
+RUN - npm run start
+--------------------------------------------------------------------------------
+Front end setup - 
+
+1. npx create-react-app frontend -> no capital letters in naming folder
+2. npm i react-router-dom
+3. created pages folder -1st letter in pages name must be Capital.
+4. import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+5. npm i antd -> ui components
+6. npm i axios -> to connect 2 server at a time
+7.
 
 
-
-4. npx create-react-app frontend -> no capital letters in naming folder
-
+RUN - npm start
 
 
 

@@ -6,8 +6,12 @@ import user_model from "../Models/user.js";
 // Creates an Express router instance to handle routes.
 const router = express.Router();
 
+// using router with json format
+router.use(express.json());
+
 // creating api - 1
 //Route to handle POST requests to save user details in DB
+// http://localhost:5000/api/user_details  - API 1 - URL
 router.post("/user_details", async (req, res) => {
   // try-catch block
   try {
@@ -18,6 +22,7 @@ router.post("/user_details", async (req, res) => {
     const { name, email, password } = req.body;
 
     // Creating a new instance of the user model with the extracted data
+    //1. creating a variable "user" works as per schema coming from frontend input
     const user = new user_model(req.body);
 
     // Saving the user details to the database

@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "description": "Basic setup - MERN STACK! \r 1. npm init -y\r 2. npm i express mongoose nodemon\r 3. created folder - backend\r 4. npx create-react-app frontend -> no capital letters in naming folder\r 5. app.js create and models folder followed by user.js and connecting with the database.\r 6. created .env file in the root folder \r 7. created folder - dbConfig to connect with the db.\r 8.  tried to run - connecting error -> permission denial",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/app.js",
-    "dev":"nodemon backend/app.js"
-
+    "dev": "nodemon backend/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongoose": "^8.3.2",
